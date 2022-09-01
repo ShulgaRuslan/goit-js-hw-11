@@ -1,0 +1,149 @@
+dsfgds
+
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+
+body {
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+fieldset{
+  background-color: #4056b4;
+  padding: 10px 0;
+  top: 0;
+  left: 0;
+  border: none;
+  position:fixed;
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+/* display: block; */
+position: relative;
+width: 50%;
+max-width: 200px;
+/* margin-left: auto; */
+/* margin-right: auto; */
+}
+
+input[type="text"]{
+  padding: 4px 24px 4px 4px;
+  width: 100%;
+  border-style: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  vertical-align: middle;
+  /* height: 16px; */
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button[type="submit"]{
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  overflow: hidden;
+  top: 7px;
+  left: calc(100% + 8px);
+  text-indent: -999px;
+  height: 16px;
+  width:16px;
+  background: url(./img/search.svg) no-repeat;
+  background-position: 1px;
+}
+
+.gallery{
+  display: grid;
+  max-width: 1140px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+  grid-gap: 12px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0 20px;
+}
+
+.photo-card:hover{
+  transform: scale(1.03);
+}
+.photo-card{
+  /* position: relative; */
+  border: 1px solid #aaa;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  
+    transition: transform var(--animation-duration) var(--timing-function);
+  max-width: 500px;
+  
+}
+
+img{
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.info{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  position: relative;
+  height: 25%;
+}
+
+.info-item{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.more-block{
+  display:flex;
+  justify-content: center;
+}
+
+.load-more{
+  display:block;
+  background-color: #4056b4;
+  color:#fafafa;
+  border-radius: 4px;
+  border: none;
+  margin: 10px;
+  padding:6px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+.notification-text{
+  padding:20px;
+  font-size: 16px;
+  letter-spacing: 1.02;
+  font-family: Arial, Helvetica, sans-serif;
+}
