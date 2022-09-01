@@ -19,7 +19,7 @@ export default class ImgApiService{
             this.page = 1;
         };
 
-        const KEY = '28160645-02600786ca706ffa5b60b520e';
+        const KEY = '29657950-ade50d14623a4993a922f2144';
         const url = 'https://pixabay.com/api/?';
         const per_page = 40;
         const options = {
